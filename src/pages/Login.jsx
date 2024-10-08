@@ -2,15 +2,17 @@ import React from 'react';
 import './Login.css';
 import { FaUserAlt } from "react-icons/fa";
 import { CiLock } from "react-icons/ci"; // Correct import for CiLock
+import  Navbar  from '../components/Navbar.jsx'
 
 const Login = () => {
   return (
     <div>
+      <Navbar/>
       <br />
       <br />
       <br /><br />
     <div className='wrapper'>
-        <form action="">
+        <form action="/teacherdashboard">
             <h1>Login</h1>
             <div className="input-box">
                 <input type='text' placeholder='UserName' required/>

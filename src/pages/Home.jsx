@@ -1,9 +1,12 @@
 import React from 'react';
 import backgroundImage from '../assets/back.webp';
+import  Navbar  from '../components/Navbar.jsx'
 
 const Home = () => {
   return (
-    
+   <div>
+      <Navbar/>
+
     <div style={{ height: '100vh', width: '100vw', overflow: 'hidden'}}>
       
       <img
@@ -15,6 +18,7 @@ const Home = () => {
           objectFit: 'cover',
         }}
       />
+    </div>
     </div>
   );
 };

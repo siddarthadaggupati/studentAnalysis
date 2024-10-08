@@ -1,8 +1,10 @@
 import React from 'react'
+import  Navbar  from '../components/Navbar.jsx'
 
 const Features = () => {
   return (
     <div id='features' smooth>
+      <Navbar/>
           <div style={{marginLeft:'15px',marginTop:'10px', marginRight:'10px'}}>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ad fugiat laudantium accusamus eaque officiis ipsa? Odit sunt maxime enim voluptatibus voluptatem doloremque recusandae inventore cupiditate. Deserunt blanditiis accusantium quaerat.
     Dolore sit quam corrupti ut minima beatae sunt animi reprehenderit quasi, corporis eligendi aperiam totam veniam velit ex minus error libero modi praesentium harum nam? Ut rem architecto magnam dolore?

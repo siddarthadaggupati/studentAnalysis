@@ -1,8 +1,10 @@
 import React from 'react'
+import Navbar  from '../components/Navbar.jsx'
 
 const About = () => {
   return (
     <div id='about' smooth>
+      <Navbar/>
       <br /> <br />
       <h1 style={{marginLeft:"15px",fontSize:'3rem', color:"#343a40"}}>About SPAS</h1>
      <i> <h1 style={{textAlign:"center", fontSize:'2.5rem', color:"#343a40"}}>Intensifying Instruction Professional  <br />Development</h1> <br /></i>
