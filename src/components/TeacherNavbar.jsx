@@ -8,7 +8,7 @@ const TeacherNavbar = () => {
 
   return (
     <nav>
-      <Link className='title' to="/">StudentPerfomaceAndAnalysis</Link>
+      <Link className='title' to="/teacherdashboard">StudentPerfomaceAndAnalysis</Link>
       <div className="menu" onClick={() => {
         setMenuOpen(!menuOpen);
       }}>
@@ -17,14 +17,14 @@ const TeacherNavbar = () => {
         <span></span>
       </div>
       <ul className={menuOpen ? "open" : ""}>
-        <li> <Link to="/">Home</Link> </li>
+        <li> <Link to="/teacherdashboard">Home</Link> </li>
         <li>
             <div className="dropdown">
-                <Link className='dropbtn'>Dropdown</Link>
+                <Link className='dropbtn'>Student</Link>
                     <div className="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <a href="/addstudent">Add Student</a>
+                        <a href="/deletestudent">Delete Student</a>
+                        <a href="/updatestudent">Update Student</a>
                     </div>
             </div>
         </li>
