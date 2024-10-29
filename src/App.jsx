@@ -9,6 +9,7 @@ import Home from './pages/Home.jsx';
 import TeacherDashboard from './pages/TeacherDashboard.jsx';
 import AddStudent from './pages/AddStudent.jsx';
 import StudentUpdates from './pages/StudentUpdates.jsx';
+import DeptPieChart from './pages/DeptPieChart.jsx';
 function App() {
   return (
     <div>
@@ -22,6 +23,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/addstudent' element={<AddStudent/>} />
         <Route path='/student' element={<StudentUpdates/>} />
+        <Route path='/pie' element={<DeptPieChart/>} />
       </Routes>
 
     </div>
