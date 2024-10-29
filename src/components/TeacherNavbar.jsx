@@ -18,16 +18,7 @@ const TeacherNavbar = () => {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li> <Link to="/teacherdashboard">Home</Link> </li>
-        <li>
-            <div className="dropdown">
-                <Link className='dropbtn'>Student</Link>
-                    <div className="dropdown-content">
-                        <a href="/addstudent">Add Student</a>
-                        <a href="/deletestudent">Delete Student</a>
-                        <a href="/updatestudent">Update Student</a>
-                    </div>
-            </div>
-        </li>
+        <li> <Link to="/student">Student</Link> </li>
         <li> <Link to="#">Analyze Student</Link> </li>
         <li> <Link to="#">Profile</Link> </li>
       </ul>

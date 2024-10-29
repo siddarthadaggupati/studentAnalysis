@@ -8,9 +8,7 @@ import Contact from './pages/Contact.jsx';
 import Home from './pages/Home.jsx';
 import TeacherDashboard from './pages/TeacherDashboard.jsx';
 import AddStudent from './pages/AddStudent.jsx';
-import DeleteStudent from './pages/DeleteStudent.jsx';
-import UpdateStudent from './pages/UpdateStudent.jsx';
-
+import StudentUpdates from './pages/StudentUpdates.jsx';
 function App() {
   return (
     <div>
@@ -23,8 +21,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/addstudent' element={<AddStudent/>} />
-        <Route path='/deletestudent' element={<DeleteStudent/>} />
-        <Route path='/updatestudent' element={<UpdateStudent/>} />
+        <Route path='/student' element={<StudentUpdates/>} />
       </Routes>
 
     </div>

@@ -3,3 +3,12 @@
     height: 100%;
     width: 100%;
 }
+.add-btn {
+    background-color: green;
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: #ffff;
+    border-radius: 6px;
+    margin-left: 10px;
+}
