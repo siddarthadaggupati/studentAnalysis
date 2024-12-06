@@ -52,7 +52,6 @@ const UpdateStudent = () => {
         }).then((res)=>{
             alert(res.data)
             getall()
-            setIsEditing(false)
         })
     }
 
@@ -70,7 +69,7 @@ const UpdateStudent = () => {
            <div>
            <Navbar />
             <h1>Update Students</h1>
-            <table border="2">
+            <table>
                 <thead>
                     <tr>
                         <th>Registered Number</th>

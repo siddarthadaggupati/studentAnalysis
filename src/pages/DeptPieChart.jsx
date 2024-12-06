@@ -20,7 +20,7 @@ const DeptPieChart = () => {
         ? {
               data: result,
               title: {
-                  text: "Number of Students in Department",
+                  text: "Number of Students in Each Department",
               },
               series: [
                   {
@@ -35,7 +35,7 @@ const DeptPieChart = () => {
                   },
               ],
               background: {
-                fill: '#c4e7f3', // Set background fill to 'none' for transparency
+                fill: '#c4e7f3',
               },
           }
         : null;

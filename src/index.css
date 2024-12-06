@@ -5,8 +5,69 @@
 
 }
 
+.chart-analyze {
+    margin-left: 60px;
+    width: calc(100% - 10%);
+}
 
 
 body{
     background: #c4e7f3;
+}
+
+.analyze-contanier label{
+    margin-left: 15px;
+
+}
+.analyze-contanier input{
+    width: 20%;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+.analyze-contanier button{
+    background-color: green;
+    border: none;
+    color: #ffff;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+.forgot-password{
+    width: 420px;
+    background-color: #34a0a4;
+    padding: 30px;
+    border-radius: 10px;
+    color: black;
+    margin: 200px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.forgot-password  .inputbox {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.forgot-password .inputbox input {
+    width: 100%;
+    height: 120%;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.forgot-password label{
+    font-size: 1rem;
+}
+
+.forgot-password button{
+
+    background-color: green;
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: #ffff;
+    border-radius: 6px;
+    margin-left: 125px;
 }

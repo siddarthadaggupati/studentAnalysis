@@ -10,6 +10,9 @@ import TeacherDashboard from './pages/TeacherDashboard.jsx';
 import AddStudent from './pages/AddStudent.jsx';
 import StudentUpdates from './pages/StudentUpdates.jsx';
 import DeptPieChart from './pages/DeptPieChart.jsx';
+import Profile from './pages/Profile.jsx';
+import AnalyzeStudent from './pages/AnalyzeStudent.jsx';
+import ForgotPasswordTeacher from './pages/ForgotPasswordTeacher.jsx';
 function App() {
   return (
     <div>
@@ -23,7 +26,9 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/addstudent' element={<AddStudent/>} />
         <Route path='/student' element={<StudentUpdates/>} />
-        <Route path='/pie' element={<DeptPieChart/>} />
+        <Route path='/analyzestudent' element={<AnalyzeStudent/>} />
+        <Route path='/teacherprofile' element={<Profile/>} />
+        <Route path='/teacherpassword' element={<ForgotPasswordTeacher/>} />
       </Routes>
 
     </div>
