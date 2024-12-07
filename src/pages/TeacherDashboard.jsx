@@ -3,6 +3,7 @@ import dashboard from '../assets/dashboard.png'
 import  Navbar  from '../components/TeacherNavbar.jsx'
 import DeptPieChart from './DeptPieChart.jsx'
 import './TeacherDashboard.css'
+import PassPercent from './PassPercent.jsx'
 
 const TeacherDashboard = () => {
   return (
@@ -10,7 +11,12 @@ const TeacherDashboard = () => {
       <Navbar/>
       <br />
       <div className='dept-chart' >
-        <DeptPieChart/>
+      <div>
+          <DeptPieChart />
+        </div>
+        <div>
+          <PassPercent />
+        </div>
       </div>
     </div>
   )

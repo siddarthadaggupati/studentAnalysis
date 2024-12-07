@@ -1,3 +1,21 @@
-.dept-chart{
-    width: 500px;
-}
+.dept-chart {
+    display: flex;
+    justify-content: space-evenly; /* Maintains even spacing between the charts */
+    align-items: center;
+    width: 100%; /* Full page width */
+    padding: 0 60px; /* Adjust padding to control spacing from page edges */
+  }
+  
+  .dept-chart > div {
+    flex: 1; /* Ensures equal distribution of width between the two charts */
+    margin: 10px; /* Adds spacing around each chart */
+    max-width: 30%; /* Ensures the graphs are wider but don't overlap */
+    height: 350px; /* Adjust height if needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Optional: Light background for better visibility */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better aesthetics */
+  }
+  

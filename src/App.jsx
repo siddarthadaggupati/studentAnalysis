@@ -13,6 +13,10 @@ import DeptPieChart from './pages/DeptPieChart.jsx';
 import Profile from './pages/Profile.jsx';
 import AnalyzeStudent from './pages/AnalyzeStudent.jsx';
 import ForgotPasswordTeacher from './pages/ForgotPasswordTeacher.jsx';
+import StudentLogin from './pages/StudentLogin.jsx';
+import StudentDashboard from './pages/StudentDashboard.jsx';
+import UploadCsv from './pages/UploadCSV.jsx';
+import FeePaymet from './pages/FeePayment.jsx';
 function App() {
   return (
     <div>
@@ -20,15 +24,19 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/home' element={<Home/>}/>
         <Route path='/teacherdashboard' element={<TeacherDashboard/>}/>
+        <Route path='/studentdashboard' element={<StudentDashboard/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/features' element={<Features/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/studentlogin' element={<StudentLogin/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/addstudent' element={<AddStudent/>} />
         <Route path='/student' element={<StudentUpdates/>} />
         <Route path='/analyzestudent' element={<AnalyzeStudent/>} />
         <Route path='/teacherprofile' element={<Profile/>} />
         <Route path='/teacherpassword' element={<ForgotPasswordTeacher/>} />
+        <Route path='/uploadstudentcsv' element={<UploadCsv/>} />
+        <Route path='/pay' element={<FeePaymet/>} />
       </Routes>
 
     </div>

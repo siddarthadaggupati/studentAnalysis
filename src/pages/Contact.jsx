@@ -3,24 +3,15 @@ import  Navbar  from '../components/Navbar.jsx'
 
 const Contact = () => {
   useEffect(() => {
-    // Preconnect to the domain to establish faster connection
-    const preconnectLink = document.createElement('link');
-    preconnectLink.rel = 'preconnect';
-    preconnectLink.href = 'https://static-bundles.visme.co';
-    document.head.appendChild(preconnectLink);
-
-    // Load the script with defer
     const script = document.createElement('script');
-    script.src = 'https://static-bundles.visme.co/forms/vismeforms-embed.js';
-    script.defer = true;
-
-    // Append the script to the document body
+    script.src = "https://static-bundles.visme.co/forms/vismeforms-embed.js";
+    script.async = true;
     document.body.appendChild(script);
-    
+
     return () => {
-      document.body.removeChild(script);
+        document.body.removeChild(script);
     };
-  }, []);
+}, []);
 
   return (
     <div>

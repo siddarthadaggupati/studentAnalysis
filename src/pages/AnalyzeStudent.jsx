@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { createRoot } from "react-dom/client";
 import { AgCharts } from "ag-charts-react";
 import Navbar from "../components/TeacherNavbar.jsx";
-import { BsDisplay } from "react-icons/bs";
 import axios from "axios";
 
 

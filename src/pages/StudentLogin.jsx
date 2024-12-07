@@ -6,18 +6,19 @@ import  Navbar  from '../components/Navbar.jsx'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-const Login = () => {
+const StudentLogin = () => {
   const navigate = useNavigate();
   function handleLogin(event){
     event.preventDefault();
-    axios.post("http://localhost:8080/loginfaculty",{
-      username : document.getElementById('username').value,
+    axios.post("http://localhost:8080/loginstudent",{
+      regno : document.getElementById('username').value,
       password : document.getElementById('password').value
     }).then((res)=>{
       if(res.data === "login succesful")
       {
-        localStorage.setItem("username",document.getElementById('username').value)
-        navigate('/teacherdashboard')
+        localStorage.setItem("regno",document.getElementById('username').value)
+        //alert(res.data)
+        navigate("/studentdashboard")
       }
       else{
         alert("incorrect username or password")
@@ -61,4 +62,4 @@ const Login = () => {
   )
 }
 
-export default Login;
+export default StudentLogin;

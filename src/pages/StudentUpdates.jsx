@@ -54,7 +54,7 @@ const StudentUpdates = () => {
         })
     }
     function handelDelete(event){
-        alert(`Deleting Student regno: `,event.currentTarget.getAttribute("regno"))
+        //alert(`Deleting Student regno: `,event.currentTarget.getAttribute("regno"))
         axios.delete("http://localhost:8080/deletestudent",{params:{
             regno : event.currentTarget.getAttribute("regno")
         }}).then((res)=>{
@@ -75,7 +75,8 @@ const StudentUpdates = () => {
         <div>
             <Navbar />
             <br />
-            <button className='add-btn' onClick={() => navigate("/addstudent")}>+ Add Student</button>
+            <button className='add-btn' onClick={() => navigate("/addstudent")}>+ Add Student</button> <br /> <br /><h3 style={{marginLeft:"15px"}}>Or</h3> <br />
+            <button className='add-btn' onClick={() => navigate("/uploadstudentcsv")}>+ Upload Student csv</button>
             <br />
             <br />
             <table border="2">
