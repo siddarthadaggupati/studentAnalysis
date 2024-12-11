@@ -7,7 +7,7 @@ const AddStudent = () => {
   const navigate = useNavigate();
   function handleSubmit(event){
     event.preventDefault();
-    axios.post("http://localhost:8080/insertstudent",{
+    axios.post("https://selfless-light-production-7afb.up.railway.app/insertstudent",{
       regno : document.getElementById("regno").value,
       name : document.getElementById("name").value,
       email : document.getElementById("email").value,

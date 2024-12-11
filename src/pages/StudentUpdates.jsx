@@ -16,7 +16,7 @@ const StudentUpdates = () => {
     const [result, setResult] = useState(null); 
     if(result == null)
     {
-        axios.get("http://localhost:8080/getallstudents")
+        axios.get("https://selfless-light-production-7afb.up.railway.app/getallstudents")
             .then((res) => {
                 setResult(res.data);
             })
@@ -40,7 +40,7 @@ const StudentUpdates = () => {
 
     function handleUpdate(e) {
         e.preventDefault();
-        axios.put("http://localhost:8080/updatestudent",{
+        axios.put("https://selfless-light-production-7afb.up.railway.app/updatestudent",{
             regno : selectedStudent.regno,
             name : selectedStudent.name,
             email : selectedStudent.email,
@@ -55,7 +55,7 @@ const StudentUpdates = () => {
     }
     function handelDelete(event){
         //alert(`Deleting Student regno: `,event.currentTarget.getAttribute("regno"))
-        axios.delete("http://localhost:8080/deletestudent",{params:{
+        axios.delete("https://selfless-light-production-7afb.up.railway.app/deletestudent",{params:{
             regno : event.currentTarget.getAttribute("regno")
         }}).then((res)=>{
             alert(res.data)

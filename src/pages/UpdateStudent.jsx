@@ -18,7 +18,7 @@ const UpdateStudent = () => {
     }, []); 
 
     function getall() {
-        axios.get("http://localhost:8080/getallstudents")
+        axios.get("https://selfless-light-production-7afb.up.railway.app/getallstudents")
             .then((res) => {
                 setResult(res.data);
             })
@@ -43,7 +43,7 @@ const UpdateStudent = () => {
 
     function handleUpdate(e) {
         e.preventDefault();
-        axios.put("http://localhost:8080/updatestudent",{
+        axios.put("https://selfless-light-production-7afb.up.railway.app/updatestudent",{
             regno : selectedStudent.regno,
             name : selectedStudent.name,
             email : selectedStudent.email,

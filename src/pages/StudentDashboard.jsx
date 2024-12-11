@@ -10,7 +10,7 @@ const StudentDashboard = () => {
     handleAnalyze();
 }, []); 
   function handleAnalyze(){
-    axios.get("http://localhost:8080/getcgpa",{
+    axios.get("https://selfless-light-production-7afb.up.railway.app/getcgpa",{
       params: {
         regno : localStorage.getItem("regno")
       }

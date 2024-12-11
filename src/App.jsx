@@ -17,6 +17,7 @@ import StudentLogin from './pages/StudentLogin.jsx';
 import StudentDashboard from './pages/StudentDashboard.jsx';
 import UploadCsv from './pages/UploadCSV.jsx';
 import FeePaymet from './pages/FeePayment.jsx';
+import UpdatePassword from './pages/UpdatePassword.jsx';
 function App() {
   return (
     <div>
@@ -37,6 +38,7 @@ function App() {
         <Route path='/teacherpassword' element={<ForgotPasswordTeacher/>} />
         <Route path='/uploadstudentcsv' element={<UploadCsv/>} />
         <Route path='/pay' element={<FeePaymet/>} />
+        <Route path='/updatepwd' element={<UpdatePassword/>} />
       </Routes>
 
     </div>

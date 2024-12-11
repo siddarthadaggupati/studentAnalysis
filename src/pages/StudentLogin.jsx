@@ -10,7 +10,7 @@ const StudentLogin = () => {
   const navigate = useNavigate();
   function handleLogin(event){
     event.preventDefault();
-    axios.post("http://localhost:8080/loginstudent",{
+    axios.post("https://selfless-light-production-7afb.up.railway.app/loginstudent",{
       regno : document.getElementById('username').value,
       password : document.getElementById('password').value
     }).then((res)=>{

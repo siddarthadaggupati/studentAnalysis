@@ -6,7 +6,7 @@ const DeptPieChart = () => {
     const [result, setResult] = useState(null);
 
     useEffect(() => {
-        axios.get("http://localhost:8080/tdash")
+        axios.get("https://selfless-light-production-7afb.up.railway.app/tdash")
             .then((res) => {
                 console.log(res.data); // Check the structure of the data
                 setResult(res.data);

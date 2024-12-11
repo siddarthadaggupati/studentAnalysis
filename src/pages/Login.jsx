@@ -10,7 +10,7 @@ const Login = () => {
   const navigate = useNavigate();
   function handleLogin(event){
     event.preventDefault();
-    axios.post("http://localhost:8080/loginfaculty",{
+    axios.post("https://selfless-light-production-7afb.up.railway.app/loginfaculty",{
       username : document.getElementById('username').value,
       password : document.getElementById('password').value
     }).then((res)=>{

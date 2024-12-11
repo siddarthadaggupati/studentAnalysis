@@ -7,7 +7,7 @@ import axios from "axios";
 const AnalyzeStudent = () => {
   const [options, setOptions] = useState(null)
   function handleAnalyze(){
-    axios.get("http://localhost:8080/getcgpa",{
+    axios.get("https://selfless-light-production-7afb.up.railway.app/getcgpa",{
       params: {
         regno : document.getElementById("id").value
       }

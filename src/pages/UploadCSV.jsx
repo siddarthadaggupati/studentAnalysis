@@ -23,7 +23,7 @@ const UploadCsv = () => {
     formData.append("file", file);
 
     try {
-      const response = await axios.post("http://localhost:8080/upload", formData, {
+      const response = await axios.post("https://selfless-light-production-7afb.up.railway.app/upload", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
